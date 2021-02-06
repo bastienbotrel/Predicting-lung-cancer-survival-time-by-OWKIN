@@ -5,7 +5,7 @@ Challenge provided by OWKIN's company and organized by College de France and Eco
 Final leaderbord published on December 15th, 2020.
 Ranking: 2/98
 
-##About me
+## About me
 I worked as a biostatistician during 7 years in contract reasearch organization and biotechnologie, in France, United Kingdom and Belgium.
 I am seeking to move into data science and especially in artificial intelligence.
 
