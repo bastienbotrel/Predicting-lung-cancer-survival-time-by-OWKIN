@@ -16,5 +16,5 @@ I participated to this challenge to have a first project in data science. Furthe
 
 The aim of the challenge is to predict the survival time of a patient (remaining days to live) from one three-dimensional CT scan (grayscale image) and a set of pre-extracted quantitative imaging features, as well as clinical data.
 
-Information on the context of the challenge can be found [here](https://challengedata.ens.fr/participants/challenges/33/) on the website of the challenges (https://challengedata.ens.fr/).
+Information on the context of the challenge and data can be found [here](https://challengedata.ens.fr/participants/challenges/33/) on the website of the challenges (https://challengedata.ens.fr/).
  
