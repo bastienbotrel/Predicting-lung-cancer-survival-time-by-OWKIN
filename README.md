@@ -2,7 +2,7 @@
 
 Challenge provided by OWKIN's company and organized by College de France and Ecole Normale Supérieure of Paris.
 
-Final leaderbord published on December 15th, 2020
+Final leaderbord published on December 15th, 2020.
 
 Ranking: 2/98 
 
