@@ -30,7 +30,7 @@ Detailed information on the context of the challenge and data can be found [here
 ### Sample size
 
 300 patients were included in the training set. 
-The test set was splitted into two subsets: 63 patients in a public test set used to assess our model and 62 patients in a private test set used for the final ranking.
+The test set was splitted into two subsets: 63 patients in a public test set used to evaluate the model and 62 patients in a private test set used for the final ranking.
 
 ## Data Exploration and Cleaning
 
@@ -43,3 +43,9 @@ Then, I used the 3D CT scans in a **Survival Convolutional Neural Network** (SCN
 I tried two others CNN trained with the same loss function:
 * **SCNN** from **2D CT scans** in order to increase the sample size of the train data (3D CT scans are cut at the center of the tumor in each axis)
 * **Clinical Survival Convolutional Network** combining the 3D CT scans with the clinical/radiomics features
+
+## Results
+
+The metric used to evaluate the model was the concordance index (C-index), a score ranging from 0 to 1.
+
+The best model is the Cox model integrating the risk score predicted from the **SCNN using the 3D CT scans**, with a C-index of 0.77.
