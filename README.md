@@ -49,3 +49,5 @@ I tried two others CNN trained with the same loss function:
 The metric used to evaluate the model was the concordance index (C-index), a score ranging from 0 to 1.
 
 The best model is the Cox model integrating the risk score predicted from the **SCNN using the 3D CT scans**, with a C-index of 0.77.
+
+## References 
