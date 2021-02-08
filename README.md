@@ -41,7 +41,7 @@ First of all, I performed a survival analysis using a **proportional hazard mode
 Then, I used the 3D CT scans in a **Survival Convolutional Neural Network** (SCNN) trained with a loss function specific to survival analysis (Cox PH loss function [1]). The SCNN output a risk score for each patient, which is then integrated in a Cox model on top of the clinical data previously retained in the reference model.
 
 I tried two others CNN trained with the same loss function:
-* **SCNN** from **2D CT scans** in order to increase the sample size of the train data (3D CT scans are cut at the center of the tumor in each axis)
+* **SCNN** from **2D CT scans** in order to increase the sample size of the train data (3D CT scans have been cut at the center of the tumor in each axis)
 * **Clinical Survival Convolutional Network** combining the 3D CT scans with the clinical/radiomics features
 
 ## Results
