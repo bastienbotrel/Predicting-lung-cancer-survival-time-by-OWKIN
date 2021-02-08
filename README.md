@@ -38,7 +38,7 @@ The test set was splitted into two subsets: 63 patients in a public test set use
 
 First of all, I performed a survival analysis using a **proportional hazard model** (Cox model), based on clinical data and radiomics features. I used this model as a *reference model* to the deep learning models I tried afterwards. This model contains 7 variables (3 clinical and 4 radiomics features) significant at 5% threshold.
 
-Then, I used the 3D CT scans in a **Survival Convolutional Neural Network** (SCNN) trained with a loss function specific to survival analysis (Cox PH loss function). The SCNN output a risk score for each patient, which is then integrated in a Cox model on top of the clinical data previously retained in the reference model.
+Then, I used the 3D CT scans in a **Survival Convolutional Neural Network** (SCNN) trained with a loss function specific to survival analysis (Cox PH loss function [1]). The SCNN output a risk score for each patient, which is then integrated in a Cox model on top of the clinical data previously retained in the reference model.
 
 I tried two others CNN trained with the same loss function:
 * **SCNN** from **2D CT scans** in order to increase the sample size of the train data (3D CT scans are cut at the center of the tumor in each axis)
@@ -50,4 +50,6 @@ The metric used to evaluate the model was the concordance index (C-index), a sco
 
 The best model is the Cox model integrating the risk score predicted from the **SCNN using the 3D CT scans**, with a C-index of 0.77.
 
-## References 
+## Reference 
+
+[1] Cox PH loss function computation - https://github.com/sebp/survival-cnn-estimator
