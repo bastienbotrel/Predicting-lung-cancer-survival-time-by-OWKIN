@@ -33,7 +33,7 @@ The test set was splitted into two subsets: 63 patients in a public test set use
 
 ## Data Exploration and Preprocessing
 
-Data exploration and preprocessing of clinical data and radiomics features as well as target and censorship variables can be found in this notebook.
+Data exploration and preprocessing of clinical data and radiomics features as well as target and censorship variables can be found in this [notebook](https://github.com/BastienBotrel/Predicting-lung-cancer-survival-time-by-OWKIN/blob/main/Preprocessing.ipynb).
 
 ## Models Building
 
