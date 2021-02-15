@@ -32,7 +32,7 @@ Detailed information on the context of the challenge and data can be found [here
 300 patients were included in the training set. 
 The test set was splitted into two subsets: 63 patients in a public test set used to evaluate the model and 62 patients in a private test set used for the final ranking.
 
-## Data Exploration and Cleaning
+## Data Exploration and Preprocessing
 
 ## Model Building
 
@@ -49,6 +49,8 @@ I tried two others CNN trained with the same loss function:
 The metric used to evaluate the model was the concordance index (C-index), a score ranging from 0 to 1.
 
 The best model is the Cox model integrating the risk score predicted from the **SCNN using the 3D CT scans**, with a C-index of 0.77.
+
+## Requirements
 
 ## Reference 
 
