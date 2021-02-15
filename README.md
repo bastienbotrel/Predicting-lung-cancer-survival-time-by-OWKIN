@@ -39,7 +39,7 @@ Data exploration and preprocessing of clinical data and radiomics features as we
 
 First of all, I performed a survival analysis using a **[proportional hazard model](https://github.com/BastienBotrel/Predicting-lung-cancer-survival-time-by-OWKIN/blob/main/Cox_Model.ipynb)** (Cox model), based on clinical data and radiomics features. I used this model as a *baseline model* to the deep learning models I tried afterwards. This model contains 6 variables (3 clinical and 3 radiomics features) significant at 5% threshold.
 
-Then, I used the 3D CT scans in a **Survival Convolutional Neural Network** (SCNN) trained with a loss function specific to survival analysis (Cox PH loss function [1]). The SCNN output a risk score for each patient, which is then integrated in a Cox model on top of the clinical data previously retained in the baseline model.
+Then, I used the 3D CT scans in a **[Survival Convolutional Neural Network](https://github.com/BastienBotrel/Predicting-lung-cancer-survival-time-by-OWKIN/blob/main/Survival_Convolutional_Neural_Network_3D.ipynb)** (SCNN) trained with a loss function specific to survival analysis (Cox PH loss function [1]). The SCNN output a risk score for each patient, which is then integrated in a Cox model on top of the clinical data previously retained in the baseline model.
 
 I tried two others CNN trained with the same loss function:
 * **Survival Convolutional Neural Network** from **2D CT scans** in order to increase the sample size of the train data (3D CT scans have been cut at the center of the tumor in each axis)
