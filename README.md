@@ -1,6 +1,6 @@
 # Predicting lung cancer survival time by OWKIN
 
-Challenge provided by OWKIN's company and organized by College de France and Ecole Normale Supérieure of Paris.
+Challenge provided by OWKIN company and organized by College de France and Ecole Normale Supérieure of Paris.
 
 Final leaderbord published on December 15th, 2020.  
 **Ranking: 2/98** (*you can find the winners of the 2020 challenges [here](https://challengedata.ens.fr/winners/2020)*)
