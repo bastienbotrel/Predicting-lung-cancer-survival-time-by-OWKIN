@@ -42,7 +42,7 @@ First of all, I performed a survival analysis using a **[proportional hazard mod
 Then, I used the 3D CT scans in a **[Survival Convolutional Neural Network](https://github.com/BastienBotrel/Predicting-lung-cancer-survival-time-by-OWKIN/blob/main/Survival_Convolutional_Neural_Network_3D.ipynb)** (SCNN) trained with a loss function specific to survival analysis (Cox PH loss function [1]). The SCNN output a risk score for each patient, which is then integrated in a Cox model on top of the clinical data previously retained in the baseline model.
 
 I tried two others CNN trained with the same loss function:
-* **[Survival Convolutional Neural Network](https://github.com/BastienBotrel/Predicting-lung-cancer-survival-time-by-OWKIN/blob/main/Survival_Convolutional_Neural_Network_2D.ipynb)** from **2D CT scans** in order to increase the sample size of the train data (3D CT scans have been sliced at the center of the tumor in each axis)
+* **[2D Survival Convolutional Neural Network](https://github.com/BastienBotrel/Predicting-lung-cancer-survival-time-by-OWKIN/blob/main/Survival_Convolutional_Neural_Network_2D.ipynb)** in order to increase the sample size of the train data (3D CT scans have been sliced at the center of the tumor in each axis)
 * **[Clinical Survival Convolutional Neural Network](https://github.com/BastienBotrel/Predicting-lung-cancer-survival-time-by-OWKIN/blob/main/Clinical_SCNN.ipynb)** handling two inputs: the 3D CT scans and the clinical data.
 
 ## Results
